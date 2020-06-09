@@ -163,10 +163,14 @@
 
         }
         function clearStorage(){
-            if (confirm("Do you areally want to clear?")){
+            var pass = +prompt("Enter Password...");
+            if (pass == 12345){
             console.log('Clearing the storage')
             localStorage.clear();
             update()
+            }
+            else{
+              prompt("Please Enter the Correct password")
             }
         }
     </script>
