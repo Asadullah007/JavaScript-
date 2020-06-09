@@ -29,5 +29,5 @@ jobs:
     - name: install surge
       run: npm install -g surge
     - name: run surge
-      run: surge ./ todolist2020.surge.sh --token ${{secrets.SURGE01_APP}}
+      run: surge ./ todolistonjs2020.surge.sh --token ${{secrets.SURGE01_APP}}
           
